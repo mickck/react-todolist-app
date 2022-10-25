@@ -34,6 +34,16 @@ const Area = styled.div<IAreaProps>`
   transition: background-color 0.4s ease-in-out;
   padding: 20px;
 `;
+const Button = styled.button`
+  /* position: absolute; */
+  text-align: right;
+  padding-right: 20px;
+  background: none;
+  border: none;
+  outline: none;
+  font-size: 25px;
+  cursor: pointer;
+`;
 
 interface IBoardProps {
   toDos: IToDo[];
@@ -60,16 +70,27 @@ function Board({ toDos, boardId }: IBoardProps) {
       text: toDo,
     };
     setToDos((allBoards) => {
-      return {
+      const update = {
         ...allBoards,
-        [boardId]: [newToDo, ...allBoards[boardId]],
+        [boardId]: [...allBoards[boardId], newToDo],
       };
+      localStorage.setItem("todo", JSON.stringify(update));
+      return update;
     });
     setValue("toDo", "");
+  };
+  const onRemove = () => {
+    setToDos((allBoards) => {
+      const update = Object.entries(allBoards).filter((target) => target[0] !== boardId);
+      const updateList = update.reduce((r, [k, v]) => ({ ...r, [k]: v }), {});
+      localStorage.setItem("todo", JSON.stringify(updateList));
+      return updateList;
+    });
   };
   return (
     <Wrapper>
       <Title>{boardId}</Title>
+      <Button onClick={onRemove}>🗑</Button>
       <Form onSubmit={handleSubmit(onValid)}>
         <input {...register("toDo", { required: true })} type='text' placeholder={`Add task on ${boardId}`}></input>
       </Form>
