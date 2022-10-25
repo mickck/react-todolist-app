@@ -56,8 +56,15 @@ interface IForm {
 
 const Form = styled.form`
   width: 100%;
+  padding-left: 10px;
   input {
     width: 100%;
+    border: none;
+    outline: none;
+    padding: 16px 30px 16px 10px;
+    border-radius: 5px;
+    width: calc(100% - 60px);
+    font-size: 15px;
   }
 `;
 
