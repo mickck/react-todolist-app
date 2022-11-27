@@ -36,7 +36,9 @@ const Area = styled.div<IAreaProps>`
 `;
 const Button = styled.button`
   /* position: absolute; */
-  text-align: right;
+  display: flex;
+  justify-content: right;
+
   padding-right: 20px;
   background: none;
   border: none;
