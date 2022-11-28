@@ -1,14 +1,13 @@
 # React To Do List Application
 
-This project is a simple todo list application made with react.js 
+In this project, to-do list input form was built and validated using React Hook From. Once to-do item is created, items can be moved between categories by drag and drop using Beautiful DnD. Recoil's atoms and selectors were used to manage the state of the application. 
 
 ![trello](https://user-images.githubusercontent.com/49193381/204220928-b61ffda4-5e28-42fe-90c3-7f565c585610.png)
 
 ## Features
-- Data Fetching
-- Data Visualisation
-- Routing
-- Dark Mode
+- Form Validation
+- Drag and Drop
+- State Management
 
 ## Packages Used 
 - React Router
@@ -17,6 +16,7 @@ This project is a simple todo list application made with react.js
 - Styled Components
 - React Hook Form
 - React Query
+- Beautiful DnD
 
 ## Set Up
 
