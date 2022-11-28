@@ -2,6 +2,9 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+
+![trello](https://user-images.githubusercontent.com/49193381/204220928-b61ffda4-5e28-42fe-90c3-7f565c585610.png)
+
 ## Available Scripts
 
 In the project directory, you can run:
