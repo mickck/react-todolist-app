@@ -4,6 +4,20 @@ This project is a simple todo list application made with react.js
 
 ![trello](https://user-images.githubusercontent.com/49193381/204220928-b61ffda4-5e28-42fe-90c3-7f565c585610.png)
 
+## Features
+- Data Fetching
+- Data Visualisation
+- Routing
+- Dark Mode
+
+## Packages Used 
+- React Router
+- Typescript
+- Recoil
+- Styled Components
+- React Hook Form
+- React Query
+
 ## Set Up
 
 To set up:
