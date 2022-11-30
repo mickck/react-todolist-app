@@ -2,14 +2,17 @@
 
 In this project, to-do list input form was built and validated using React Hook From. Once to-do item is created, items can be moved between categories by drag and drop using Beautiful DnD. Recoil's atoms and selectors were used to manage the state of the application. 
 
+Webpage: https://mickck.github.io/react-todolist-app/
+
 ![trello](https://user-images.githubusercontent.com/49193381/204220928-b61ffda4-5e28-42fe-90c3-7f565c585610.png)
 
-Webpage: https://mickck.github.io/react-todolist-app/
+
 
 ## Features
 - Form Validation
 - Drag and Drop
 - State Management
+- Data stored in Local Storage
 
 ## Packages Used 
 - React Router
